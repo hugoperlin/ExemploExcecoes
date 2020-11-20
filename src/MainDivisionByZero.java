@@ -5,8 +5,12 @@ public class MainDivisionByZero {
         int valor=10;
         int divisor=0;
 
-
-        int resultado = valor/divisor;
+        try{
+            int resultado = valor/divisor;
+            System.out.println("Resultado: "+resultado);
+        }catch (ArithmeticException e){
+            System.out.println("Ocorreu uma execeção:"+e.getMessage());
+        }
 
         System.out.println("Fim...");
 
