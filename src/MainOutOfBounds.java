@@ -5,12 +5,14 @@ public class MainOutOfBounds {
         //...
         int[] vetor = new int[]{1,2,3,4};
 
+
+
         try{
             for(int i=0;i<=4;i++){
-                System.out.println("vetor[4]:"+vetor[i]);
+                System.out.println("vetor["+i+"]:"+vetor[i]);
             }
         }catch (IndexOutOfBoundsException e){
-            System.out.println("Posição do vetor inválida!!"+e.getMessage());
+            System.out.println("Ocorreu uma exceção!!"+e.getMessage());
         }
 
         System.out.println("Fim...");

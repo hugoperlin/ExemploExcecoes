@@ -7,12 +7,13 @@ public class MainDivisionByZero {
 
         try{
             int resultado = valor/divisor;
-            System.out.println("Resultado: "+resultado);
+
+            System.out.println("O resultado é:"+resultado);
         }catch (ArithmeticException e){
             System.out.println("Ocorreu uma execeção:"+e.getMessage());
         }
 
-        System.out.println("Fim...");
 
+        System.out.println("Fim...");
     }
 }

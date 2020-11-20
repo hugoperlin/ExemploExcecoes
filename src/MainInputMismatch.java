@@ -13,9 +13,10 @@ public class MainInputMismatch {
             System.out.println("Você digitou "+num);
 
         }catch (InputMismatchException e){
-            System.out.println("Voce digitou um valor inesperado...");
+            System.out.println("Ocorreu uma exceção!!");
             e.printStackTrace();
         }
+
 
         System.out.println("Fim...");
     }
